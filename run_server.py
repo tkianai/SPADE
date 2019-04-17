@@ -34,6 +34,7 @@ opt.name = 'celebA'
 opt.which_epoch = 25
 model = Pix2PixModel(opt)
 model.eval()
+print("model initialized!")
 # ---------------------------------- #
 
 def generate_image(input_path, output_path):
