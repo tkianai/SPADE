@@ -26,12 +26,6 @@ from data.base_dataset import get_params, get_transform
 import util
 
 opt = TestOptions().parse()
-opt.label_nc = 19
-opt.load_size = 512
-opt.crop_size = 512
-opt.no_instance = True
-opt.name = 'celebA'
-opt.which_epoch = 25
 model = Pix2PixModel(opt)
 model.eval()
 print("model initialized!")
@@ -94,4 +88,4 @@ def index():
 
 if __name__ == '__main__':
     # app.debug = True
-    app.run(host='10.141.17.53', port=8987, debug=False)
+    app.run(host='10.141.8.84', port=8987, debug=False)
