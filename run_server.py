@@ -23,7 +23,7 @@ from options.test_options import TestOptions
 from models.pix2pix_model import Pix2PixModel
 from PIL import Image
 from data.base_dataset import get_params, get_transform
-import util
+import util.util as util
 
 opt = TestOptions().parse()
 model = Pix2PixModel(opt)
