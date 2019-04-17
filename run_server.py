@@ -60,6 +60,7 @@ def generate_image(input_path, output_path):
     with torch.no_grad():
         fake_image = model.netG(input_semantics, z=None)
 
+    fake_image = fake_image[0]
     fake_image = util.tensor2im(fake_image)
     util.save_image(fake_image, output_path, create_dir=True)
 
